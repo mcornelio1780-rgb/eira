@@ -3,6 +3,9 @@ const WORK = [["Paco Bazán","assets/img/work-paco.jpg"],["Yolo Podcast","assets
 
 const BRANDS = ["UPC","Limly","SPOT, Sociedad Peruana de Ortopedia y Traumatología","Clínica San Bernardo","Miguel Zevallos","Nexa","Pozuzo Beef","Yolo Podcast","Paco Bazán","Allisson Villalva","Move Better","Ramona Deco Atelier","Giani Beauty Spa","Marathon","Art New Line","Find Your Voice","Franja Peruana","Apuesta Total","Fridays"];
 const ICON = {
+  photo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>',
+  bolt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>',
+  web:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>',
   brand:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7L12 3Z"/></svg>',
   camera:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="13" height="12" rx="2.5"/><path d="M15.5 10.5l6-3.5v10l-6-3.5"/></svg>',
   mic:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>',
@@ -280,10 +283,144 @@ pt:{
 }};
 
 
+
+/* ===== Actualización: 6 servicios + proceso "Cómo trabajamos" ===== */
+const EMAIL = "tulsapanduro18@gmail.com";
+const T_UPDATE = {
+es:{
+ "nav.method":"Cómo trabajamos",
+ "hero.sub":"En eira gestionamos tus redes, creamos tu contenido, cubrimos tus eventos y diseñamos tu marca y tu web, según quién eres: marca personal o empresa, B2B o B2C.",
+ "hero.v1":"Marca personal","hero.v2":"Producto","hero.v3":"Evento",
+ "svc.title":"Nuestros 6 servicios",
+ "svc.sub":"Puedes contratarlos por separado o combinarlos. Después del brief te recomendamos la mezcla que tu marca realmente necesita.",
+ "svc.mods":"Modalidades",
+ "services":[
+  {n:"Manejo de cuentas",s:"Gestionamos las redes sociales de tu marca para que tengas una presencia constante, ordenada y con estrategia.",inc:["Estrategia y pilares de contenido","Grilla mensual de publicaciones","Copys y programación","Respuesta a comentarios y mensajes","Reporte mensual de métricas"],get:["Calendario editorial mensual","Cuentas activas y ordenadas","Reporte y reunión de resultados"],ideal:"Marcas que no tienen tiempo ni equipo para sostener sus redes."},
+  {n:"Creación de contenido",s:"Grabación de contenidos, reels, entrevistas y UGC pensados para tu marca y para cada red.",inc:["Ideas y guiones","Grabación de reels y TikToks","Entrevistas y formatos de calle","Contenido UGC con creadores","Edición con subtítulos y ritmo para redes"],get:["Videos listos para publicar","Versiones para cada formato","Banco de contenido para el mes"],ideal:"Marcas que necesitan video constante y de calidad."},
+  {n:"Branding y rebranding",s:"Creamos o renovamos la identidad de tu marca para que se vea, suene y se sienta coherente.",inc:["Diagnóstico de marca y posicionamiento","Propuesta de valor y tono de voz","Identidad visual","Optimización de perfiles","Línea gráfica para redes"],get:["Guía de marca","Plantillas editables","Perfiles optimizados"],ideal:"Marcas nuevas o cuya imagen ya no las representa."},
+  {n:"Sesiones de fotos",s:"Fotografía para tu marca y tus redes: producto, equipo, espacios y marca personal.",inc:["Planificación y moodboard","Dirección de la sesión","Fotos de producto, retrato o espacios","Edición y retoque","Selección pensada para redes"],get:["Fotos editadas en alta calidad","Versiones por formato","Galería para descargar"],ideal:"Marcas que quieren elevar su imagen con fotos propias."},
+  {n:"Cobertura de eventos",s:"Contamos tus eventos en tiempo real: desde bodas hasta eventos corporativos.",mods:[["Orgánica","Con teléfono"],["Profesional","Con cámara profesional"]],inc:["Planificación de tomas clave","Stories y publicaciones en vivo","Reels y video resumen del evento","Fotos del evento","Entrega rápida para redes"],get:["Contenido en tiempo real","Video resumen","Fotos seleccionadas"],ideal:"Bodas, lanzamientos, activaciones, ferias y eventos corporativos."},
+  {n:"Diseño y desarrollo web",s:"Webs a medida que explican, convencen y convierten: en varios idiomas y conectadas a WhatsApp.",inc:["Diseño a medida con tu identidad","Versión en varios idiomas","Botones a WhatsApp, agenda y formularios","Herramientas interactivas","Publicación y dominio propio"],get:["Web publicada y lista para usar","Versión para celular","Guía para hacer cambios simples"],ideal:"Marcas personales, consultoras, startups y negocios que necesitan una web que venda."}
+ ],
+ "proc.kicker":"El proceso","proc.title":"Cómo trabajamos",
+ "proc.sub":"Cada marca es diferente. Por eso trabajamos en cinco pasos: para conocer bien tu marca antes de proponerte algo.",
+ "proc.more":"Ver el proceso completo",
+ "proc.steps":[
+  {t:"Kickoff",d:"Una primera conversación para conocernos.",pts:["Conversamos sobre tu marca","Te contamos cómo trabajamos","Identificamos el servicio que necesitas"]},
+  {t:"Brief",d:"Preguntas a medida según el servicio.",pts:["Branding y rebranding: la situación actual de tu marca","Redes sociales: tu contenido y tus plataformas","Servicio integral: un brief completo que lo cubre todo"]},
+  {t:"Investigación",d:"Indagamos tu marca y su entorno.",pts:["Analizamos tus respuestas al brief","Revisamos la situación actual de tu marca","Investigamos tu sector y temas generales"]},
+  {t:"Propuesta",d:"Lo que tu marca realmente necesita.",pts:["La situación actual de tu marca","Qué necesita tu marca y por qué","Los servicios que te recomendamos"]},
+  {t:"Inversión",d:"Propuesta económica y próximos pasos.",pts:["Recibes la propuesta económica","La evalúas sin presión","Definimos juntos los próximos pasos"]}
+ ],
+ "proc.note":"Nuestros briefs son largos a propósito: tómate el tiempo que necesites para responder.",
+ "proc.eira":"Una vez que empezamos a trabajar juntos, aplicamos el Método EIRA cada mes.",
+ "mp.title":"Cómo trabajamos","mp.sub":"Nuestro proceso, desde la primera conversación hasta el inicio del trabajo. Y cuando empezamos, el Método EIRA para mejorar cada mes.",
+ "m.sub":"Cuando ya trabajamos juntos, cuatro etapas que se repiten cada mes para que tus redes mejoren con datos y no por intuición.",
+ "f.svc":"Servicios que te interesan","o.svc":["Manejo de cuentas","Creación de contenido","Branding y rebranding","Sesiones de fotos","Cobertura de eventos","Diseño y desarrollo web","No lo sé, quiero asesoría"],
+ "scopes":[["Esencial","Un servicio puntual o presencia ordenada en 1 o 2 redes."],["Crecimiento","Redes, contenido y marca trabajando juntos para crecer y vender."],["Integral","Un equipo completo: redes, contenido, fotos, eventos y web, todo en una sola estrategia."]],
+ "faq.items":[
+  ["¿Cómo empezamos?","Con un kickoff: una primera conversación para conocernos. Luego te enviamos un brief, investigamos tu marca, te presentamos la propuesta y, recién al final, la propuesta económica."],
+  ["¿Tengo que contratar los 6 servicios?","No. Cada servicio se puede contratar por separado. Después del brief te recomendamos la combinación que tiene sentido para tu objetivo y tu presupuesto."],
+  ["¿Cómo funciona la cobertura de eventos?","Tenemos dos modalidades: orgánica, grabada con teléfono para publicar en tiempo real, y profesional, con cámara profesional. Cubrimos desde bodas hasta eventos corporativos."],
+  ["¿Cuánto tiempo toma ver resultados?","El alcance y la interacción suelen empezar a moverse en las primeras semanas. Las ventas y el crecimiento sostenido se construyen con constancia, por eso planificamos en ciclos de al menos 3 meses."],
+  ["¿Trabajan con marcas de otros países?","Sí. La estrategia, la edición y las webs las trabajamos de forma remota. Las grabaciones, sesiones de fotos y eventos presenciales se coordinan según la ubicación."]
+ ],
+ "foot.tag":"Contenido que conecta, marcas que inspiran. Redes, contenido, branding, fotos, eventos y webs para marcas que quieren crecer."
+},
+en:{
+ "nav.method":"How we work",
+ "hero.sub":"At eira we manage your social media, create your content, cover your events and design your brand and your website, around who you are: personal brand or company, B2B or B2C.",
+ "hero.v1":"Personal brand","hero.v2":"Product","hero.v3":"Event",
+ "svc.title":"Our 6 services",
+ "svc.sub":"Hire them separately or combine them. After the brief we recommend the mix your brand actually needs.",
+ "svc.mods":"Options",
+ "services":[
+  {n:"Account management",s:"We run your brand’s social media so you have a consistent, organized presence with a strategy behind it.",inc:["Strategy and content pillars","Monthly content grid","Captions and scheduling","Replies to comments and messages","Monthly metrics report"],get:["Monthly editorial calendar","Active, organized accounts","Report and results meeting"],ideal:"Brands without the time or team to keep their social media going."},
+  {n:"Content creation",s:"Filming, reels, interviews and UGC made for your brand and for each platform.",inc:["Ideas and scripts","Reels and TikTok filming","Interviews and street formats","UGC with creators","Editing with captions and social pacing"],get:["Ready-to-post videos","Versions for each format","Content bank for the month"],ideal:"Brands that need consistent, quality video."},
+  {n:"Branding & rebranding",s:"We create or refresh your brand identity so it looks, sounds and feels consistent.",inc:["Brand and positioning diagnosis","Value proposition and tone of voice","Visual identity","Profile optimization","Social media visual style"],get:["Brand guide","Editable templates","Optimized profiles"],ideal:"New brands, or brands whose image no longer represents them."},
+  {n:"Photo sessions",s:"Photography for your brand and your social media: product, team, spaces and personal brand.",inc:["Planning and moodboard","Session direction","Product, portrait or space photos","Editing and retouching","Selection made for social media"],get:["High-quality edited photos","Versions per format","Downloadable gallery"],ideal:"Brands that want to lift their image with their own photos."},
+  {n:"Event coverage",s:"We tell your events in real time: from weddings to corporate events.",mods:[["Organic","Shot on phone"],["Professional","Shot on a professional camera"]],inc:["Planning of key shots","Live stories and posts","Reels and event recap video","Event photos","Fast delivery for social media"],get:["Real-time content","Recap video","Selected photos"],ideal:"Weddings, launches, activations, fairs and corporate events."},
+  {n:"Web design & development",s:"Custom websites that explain, convince and convert: in several languages and connected to WhatsApp.",inc:["Custom design with your identity","Multiple languages","WhatsApp, booking and form buttons","Interactive tools","Publishing and custom domain"],get:["A live, ready-to-use website","Mobile version","Guide for simple edits"],ideal:"Personal brands, consultancies, startups and businesses that need a website that sells."}
+ ],
+ "proc.kicker":"The process","proc.title":"How we work",
+ "proc.sub":"Every brand is different. That’s why we work in five steps: to really know your brand before proposing anything.",
+ "proc.more":"See the full process",
+ "proc.steps":[
+  {t:"Kickoff",d:"A first conversation to get to know each other.",pts:["We talk about your brand","We explain how we work","We identify the service you need"]},
+  {t:"Brief",d:"Tailored questions depending on the service.",pts:["Branding and rebranding: where your brand is today","Social media: your content and platforms","Full service: a complete brief that covers everything"]},
+  {t:"Research",d:"We study your brand and its context.",pts:["We analyze your brief answers","We review your brand’s current situation","We research your industry and general topics"]},
+  {t:"Proposal",d:"What your brand really needs.",pts:["Your brand’s current situation","What your brand needs and why","The services we recommend"]},
+  {t:"Investment",d:"Pricing and next steps.",pts:["You receive the pricing proposal","You review it with no pressure","We define the next steps together"]}
+ ],
+ "proc.note":"Our briefs are long on purpose: take all the time you need to answer.",
+ "proc.eira":"Once we start working together, we apply the EIRA method every month.",
+ "mp.title":"How we work","mp.sub":"Our process, from the first conversation to the start of the work. And once we start, the EIRA method to improve every month.",
+ "m.sub":"Once we work together, four stages repeat every month so your social media improves with data, not hunches.",
+ "f.svc":"Services you’re interested in","o.svc":["Account management","Content creation","Branding & rebranding","Photo sessions","Event coverage","Web design & development","I’m not sure, I want advice"],
+ "scopes":[["Essential","A one-off service or an organized presence on 1 or 2 platforms."],["Growth","Social media, content and brand working together to grow and sell."],["Full","A complete team: social media, content, photos, events and web, in one strategy."]],
+ "faq.items":[
+  ["How do we start?","With a kickoff: a first conversation to get to know each other. Then we send you a brief, research your brand, present our proposal and, only at the end, the pricing."],
+  ["Do I have to hire all 6 services?","No. Each service can be hired separately. After the brief we recommend the combination that makes sense for your goal and budget."],
+  ["How does event coverage work?","There are two options: organic, shot on phone to post in real time, and professional, shot on a professional camera. We cover everything from weddings to corporate events."],
+  ["How long until I see results?","Reach and engagement usually start moving in the first weeks. Sales and steady growth come from consistency, so we plan in cycles of at least 3 months."],
+  ["Do you work with brands in other countries?","Yes. Strategy, editing and websites are done remotely. In-person shoots, photo sessions and events are coordinated depending on location."]
+ ],
+ "foot.tag":"Content that connects, brands that inspire. Social media, content, branding, photos, events and websites for brands that want to grow."
+},
+pt:{
+ "nav.method":"Como trabalhamos",
+ "hero.sub":"Na eira gerenciamos suas redes, criamos seu conteúdo, cobrimos seus eventos e desenhamos sua marca e seu site, de acordo com quem você é: marca pessoal ou empresa, B2B ou B2C.",
+ "hero.v1":"Marca pessoal","hero.v2":"Produto","hero.v3":"Evento",
+ "svc.title":"Nossos 6 serviços",
+ "svc.sub":"Você pode contratá-los separadamente ou combiná-los. Depois do brief recomendamos a combinação que a sua marca realmente precisa.",
+ "svc.mods":"Modalidades",
+ "services":[
+  {n:"Gestão de contas",s:"Gerenciamos as redes sociais da sua marca para que você tenha uma presença constante, organizada e com estratégia.",inc:["Estratégia e pilares de conteúdo","Grade mensal de publicações","Legendas e agendamento","Resposta a comentários e mensagens","Relatório mensal de métricas"],get:["Calendário editorial mensal","Contas ativas e organizadas","Relatório e reunião de resultados"],ideal:"Marcas sem tempo ou equipe para manter as redes."},
+  {n:"Criação de conteúdo",s:"Gravação de conteúdos, reels, entrevistas e UGC pensados para sua marca e para cada rede.",inc:["Ideias e roteiros","Gravação de reels e TikToks","Entrevistas e formatos de rua","Conteúdo UGC com criadores","Edição com legendas e ritmo para redes"],get:["Vídeos prontos para publicar","Versões para cada formato","Banco de conteúdo para o mês"],ideal:"Marcas que precisam de vídeo constante e de qualidade."},
+  {n:"Branding e rebranding",s:"Criamos ou renovamos a identidade da sua marca para que ela seja coerente no visual, no tom e na percepção.",inc:["Diagnóstico de marca e posicionamento","Proposta de valor e tom de voz","Identidade visual","Otimização de perfis","Linha gráfica para redes"],get:["Guia de marca","Templates editáveis","Perfis otimizados"],ideal:"Marcas novas ou que sentem que a imagem já não as representa."},
+  {n:"Sessões de fotos",s:"Fotografia para sua marca e suas redes: produto, equipe, espaços e marca pessoal.",inc:["Planejamento e moodboard","Direção da sessão","Fotos de produto, retrato ou espaços","Edição e retoque","Seleção pensada para redes"],get:["Fotos editadas em alta qualidade","Versões por formato","Galeria para baixar"],ideal:"Marcas que querem elevar a imagem com fotos próprias."},
+  {n:"Cobertura de eventos",s:"Contamos seus eventos em tempo real: de casamentos a eventos corporativos.",mods:[["Orgânica","Com celular"],["Profissional","Com câmera profissional"]],inc:["Planejamento das tomadas principais","Stories e publicações ao vivo","Reels e vídeo resumo do evento","Fotos do evento","Entrega rápida para redes"],get:["Conteúdo em tempo real","Vídeo resumo","Fotos selecionadas"],ideal:"Casamentos, lançamentos, ativações, feiras e eventos corporativos."},
+  {n:"Design e desenvolvimento web",s:"Sites sob medida que explicam, convencem e convertem: em vários idiomas e conectados ao WhatsApp.",inc:["Design sob medida com sua identidade","Versão em vários idiomas","Botões de WhatsApp, agenda e formulários","Ferramentas interativas","Publicação e domínio próprio"],get:["Site publicado e pronto para usar","Versão para celular","Guia para alterações simples"],ideal:"Marcas pessoais, consultorias, startups e negócios que precisam de um site que venda."}
+ ],
+ "proc.kicker":"O processo","proc.title":"Como trabalhamos",
+ "proc.sub":"Cada marca é diferente. Por isso trabalhamos em cinco passos: para conhecer bem a sua marca antes de propor algo.",
+ "proc.more":"Ver o processo completo",
+ "proc.steps":[
+  {t:"Kickoff",d:"Uma primeira conversa para nos conhecermos.",pts:["Conversamos sobre sua marca","Contamos como trabalhamos","Identificamos o serviço que você precisa"]},
+  {t:"Brief",d:"Perguntas sob medida conforme o serviço.",pts:["Branding e rebranding: a situação atual da sua marca","Redes sociais: seu conteúdo e suas plataformas","Serviço integral: um brief completo que cobre tudo"]},
+  {t:"Pesquisa",d:"Investigamos sua marca e seu contexto.",pts:["Analisamos suas respostas ao brief","Revisamos a situação atual da sua marca","Pesquisamos seu setor e temas gerais"]},
+  {t:"Proposta",d:"O que sua marca realmente precisa.",pts:["A situação atual da sua marca","O que sua marca precisa e por quê","Os serviços que recomendamos"]},
+  {t:"Investimento",d:"Proposta econômica e próximos passos.",pts:["Você recebe a proposta econômica","Avalia sem pressão","Definimos juntos os próximos passos"]}
+ ],
+ "proc.note":"Nossos briefs são longos de propósito: leve o tempo que precisar para responder.",
+ "proc.eira":"Quando começamos a trabalhar juntos, aplicamos o Método EIRA todo mês.",
+ "mp.title":"Como trabalhamos","mp.sub":"Nosso processo, da primeira conversa ao início do trabalho. E quando começamos, o Método EIRA para melhorar todo mês.",
+ "m.sub":"Quando já trabalhamos juntos, quatro etapas que se repetem todo mês para que suas redes melhorem com dados, e não por intuição.",
+ "f.svc":"Serviços de interesse","o.svc":["Gestão de contas","Criação de conteúdo","Branding e rebranding","Sessões de fotos","Cobertura de eventos","Design e desenvolvimento web","Não sei, quero orientação"],
+ "scopes":[["Essencial","Um serviço pontual ou presença organizada em 1 ou 2 redes."],["Crescimento","Redes, conteúdo e marca trabalhando juntos para crescer e vender."],["Integral","Uma equipe completa: redes, conteúdo, fotos, eventos e site, em uma só estratégia."]],
+ "faq.items":[
+  ["Como começamos?","Com um kickoff: uma primeira conversa para nos conhecermos. Depois enviamos um brief, pesquisamos sua marca, apresentamos a proposta e, só no final, a proposta econômica."],
+  ["Preciso contratar os 6 serviços?","Não. Cada serviço pode ser contratado separadamente. Depois do brief recomendamos a combinação que faz sentido para seu objetivo e orçamento."],
+  ["Como funciona a cobertura de eventos?","Temos duas modalidades: orgânica, gravada com celular para publicar em tempo real, e profissional, com câmera profissional. Cobrimos de casamentos a eventos corporativos."],
+  ["Em quanto tempo vejo resultados?","Alcance e interação costumam se mover nas primeiras semanas. Vendas e crescimento sustentável vêm com constância, por isso planejamos em ciclos de pelo menos 3 meses."],
+  ["Vocês trabalham com marcas de outros países?","Sim. A estratégia, a edição e os sites são feitos de forma remota. Gravações, sessões de fotos e eventos presenciais dependem da localização."]
+ ],
+ "foot.tag":"Conteúdo que conecta, marcas que inspiram. Redes, conteúdo, branding, fotos, eventos e sites para marcas que querem crescer."
+}};
+for (const l in T_UPDATE) Object.assign(T[l], T_UPDATE[l]);
+
+function renderProcess(){
+  const box=$("#process"), S=t("proc.steps"), compact=box.classList.contains("compact");
+  const tones=[["#F5F4F0","#112250","#3B507D"],["#E7E2CE","#112250","#3B507D"],["#BEB7A7","#112250","#112250"],["#3B507D","#F5F4F0","#E7E2CE"],["#112250","#F5F4F0","#BEB7A7"]];
+  box.innerHTML = S.map((s,i)=>{const [bg,fg,num]=tones[i];return `<article class="pstep" style="background:${bg};color:${fg}${i===4?";box-shadow:inset 0 0 0 1.5px #BEB7A7":""}">
+    <b class="pnum" style="color:${num}">${String(i+1).padStart(2,"0")}</b><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>
+    ${compact?"":`<ul>${s.pts.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`}</article>`}).join("");
+}
+
 const COLORS = {violet:"var(--c1)",blush:"var(--c2)",sky:"var(--c3)",mint:"var(--c4)",sun:"var(--c2)"};
 const MIXC = ["var(--c1)","var(--c2)","var(--c3)","var(--c4)"];
-const SVC_BG = ["#F5F4F0","#C5CCE0","#AEB8D6","#8E9BC0"];
-const SVC_IC = ["strategy","brand","camera","mic"];
+const SVC_BG = ["#F5F4F0","#E7E2CE","#BEB7A7","#F5F4F0","#E7E2CE","#BEB7A7"];
+const SVC_IC = ["users","camera","brand","photo","bolt","web"];
 
 let lang = "es", prof = 0, step = 0, mixI = 0, openSvc = 0;
 const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
@@ -295,7 +432,11 @@ function waLink(text){return "https://wa.me/"+WA+"?text="+encodeURIComponent(tex
 
 function applyStatic(){
   document.documentElement.lang = lang === "pt" ? "pt-BR" : lang;
-  document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent = t(el.dataset.i18n)});
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const v=t(el.dataset.i18n);
+    if(el.hasAttribute("data-dot")&&/\.$/.test(v)) el.innerHTML=esc(v.slice(0,-1))+'<span class="tdot">.</span>';
+    else el.textContent=v;
+  });
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===lang));
   document.querySelectorAll(".wa-link").forEach(a=>a.href = waLink(t("wa.generic")));
   updateThemeBtn();
@@ -326,6 +467,7 @@ function renderServices(){
       <span class="svc-toggle" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
     </button>
     <div class="svc-body" id="svcb${i}" ${i===openSvc?"":"hidden"}>
+      ${s.mods?`<div class="mods"><h4>${esc(t("svc.mods"))}</h4><div class="mod-row">${s.mods.map(([a,b])=>`<span class="mod"><b>${esc(a)}</b>${esc(b)}</span>`).join("")}</div></div>`:""}
       <div><h4>${esc(t("svc.inc"))}</h4><ul>${s.inc.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
       <div><h4>${esc(t("svc.get"))}</h4><ul>${s.get.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
       <div><h4>${esc(t("svc.ideal"))}</h4><p>${esc(s.ideal)}</p></div>
@@ -427,7 +569,7 @@ function scopeLevel(){
   let s=0;
   if(Q.type===1) s+=1; if(Q.size!==null) s+=Q.size*0.8; if(Q.model===2) s+=.6; if(Q.model===1) s+=.3;
   if(Q.sit===0) s+=.6; if(Q.sit===3) s+=.8;
-  const svc = Q.svc.filter(x=>x!==4).length; s += svc*0.7; if(Q.svc.includes(4)) s+=1;
+  const svc = Q.svc.filter(x=>x!==6).length; s += svc*0.7; if(Q.svc.includes(6)) s+=1;
   s += Math.max(0,Q.nets.length-1)*0.5;
   return s<2.5?0:s<4.8?1:2;
 }
@@ -520,7 +662,7 @@ function setLang(l){lang=l; store.set("eira-lang",l); renderAll();}
 document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
 function renderAll(){
   applyStatic();
-  const parts=[["#tiles",renderTiles],["#profTabs",renderProfiles],["#svcList",renderServices],["#cycle",renderMethod],["#mixTabs",renderMix],["#funnel",renderFunnel],["#gantt",renderGantt],["#kpis",renderKpis],["#work",renderWork],["#cases",renderCases],["#faqList",renderFaq],["#qbody",renderQuote]];
+  const parts=[["#process",renderProcess],["#profTabs",renderProfiles],["#svcList",renderServices],["#cycle",renderMethod],["#mixTabs",renderMix],["#funnel",renderFunnel],["#gantt",renderGantt],["#kpis",renderKpis],["#work",renderWork],["#cases",renderCases],["#faqList",renderFaq],["#qbody",renderQuote]];
   parts.forEach(([sel,fn])=>{ if(document.querySelector(sel)) fn(); });
 }
 
