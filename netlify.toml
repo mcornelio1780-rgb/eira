@@ -1,26 +1,19 @@
-# Configuración para Netlify (sitio estático, no necesita build)
+# Sitio estático: no necesita build
 [build]
   publish = "."
 
-# /metodologia (sin .html) también funciona
+[[redirects]]
+  from = "/plataforma-interna"
+  to = "/plataforma-interna.html"
+  status = 200
+
 [[redirects]]
   from = "/metodologia"
   to = "/metodologia.html"
   status = 200
 
-# /plataforma-interna (sin barra final) lleva a la plataforma
-[[redirects]]
-  from = "/plataforma-interna"
-  to = "/plataforma-interna/"
-  status = 301
-
 [[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
-
-[[headers]]
-  for = "/plataforma-interna/*"
+  for = "/plataforma-interna*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
     Cache-Control = "no-store"
